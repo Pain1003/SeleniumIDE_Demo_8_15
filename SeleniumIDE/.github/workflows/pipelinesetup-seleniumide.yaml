@@ -7,7 +7,7 @@ on:
      pull_request:
       branches:
         - main
-			
+        
 jobs:
     build: 
         runs-on: ubuntu-lates
@@ -21,7 +21,7 @@ jobs:
         dotnet-version: "6.0.x"
     - name: Install dependencies
       run: dotnet restore
-	
+      
     - name: Build
       run: dotnet build
       
